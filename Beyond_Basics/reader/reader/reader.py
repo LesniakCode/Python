@@ -1,7 +1,7 @@
 from fileinput import filename
 import os
 
-from reader.compressed import bzipped, gzipped
+from .compressed import bzipped, gzipped
 
 extension_map = {
     '.bz2': bzipped.opener,
@@ -10,7 +10,7 @@ extension_map = {
 
 class Reader: 
     def __init__(self,filename) -> None:
-        extension = os.path.splittext(filename)[1]
+        extension = os.path.splitext(filename)[1]
         opener = extension_map.get(extension, open)
         self.f = opener(filename, 'rt')
 
