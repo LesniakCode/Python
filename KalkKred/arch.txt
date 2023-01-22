@@ -1,0 +1,2 @@
+potrzebne klasy:
+kredyt { pola { kwota oprocentowanie okres_splaty rata kapital pozostalo} metody { wysokosc_rat_stala_wysokosc rat_zmienna_wysokosc nadplata  } }
