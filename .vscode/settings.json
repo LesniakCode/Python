@@ -1,6 +1,6 @@
 {
     "python.testing.pytestArgs": [
-        "pyTest"
+        "KalkKred"
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
